@@ -261,12 +261,10 @@ nav h1{
 
 }
 
-.rectangle:first-child{
-    box-shadow:
-}
-
-.rectangle:last-child{
-    border-right: 0;
+#mens{
+    background: url('images/mens-category.jpg') no-repeat; 
+    background-size: 100% 100%;
+    box-shadow: -0.5rem -0.5rem white inset;
 }
 .square{
     width: 25%;
@@ -279,21 +277,6 @@ nav h1{
     font-size: 3rem;
     font-weight: bold;
 }
-
-.square:nth-child(3){
-    border-right: 0;
-}
-
-.square:nth-child(4){
-    border-left: 0;
-}
-
-#mens{
-    background: url('images/mens-category.jpg') no-repeat; 
-    background-size: 100% 100%;
-    box-shadow: -0.5rem -0.5rem white inset;
-}
-
 #trends{
     background: url('images/trends-category.jpg') no-repeat; 
     background-size: 100% 100%;
@@ -324,4 +307,19 @@ nav h1{
     background: url('images/womens-category.jpg') no-repeat; 
     background-size: 100% 100%;
     box-shadow: 0.5rem 0.5rem white inset;
+}
+
+.productsContainer{
+    width:100%;
+    height: 400px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.productsHeading{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

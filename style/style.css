@@ -156,8 +156,7 @@ h4,h5,h6{
 }
 
 .logo{
-
-    max-height: 100px;
+    height: 100px;
     margin: 1em;
     width: auto;
 }
@@ -165,6 +164,7 @@ h4,h5,h6{
 
 .navigationBar {
     display:flex;
+    margin-right: 9em;
 }
 
 .navigationBar li a{
@@ -182,15 +182,16 @@ h4,h5,h6{
 
 .cart{
     margin: 1em;
-    max-height: 100px;
+    height: 100px;
     width: auto;
 }
 
 .banner{
     align-items: center;
-    background: url("../images/banner-girl.png") no-repeat center bottom,
+    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,0.25)) no-repeat center,
+                url("../images/banner-girl.png") no-repeat center bottom,
                 url("../images/flower-bkgd.jpg") repeat center;
-    background-size: auto 90%, auto;
+    background-size: auto,auto 90%, auto;
     box-shadow: 0 -5em white inset;
     color: white;
     display: flex;
@@ -250,8 +251,9 @@ h4,h5,h6{
 
 .mens{
     align-items: center;
-    background:url("../images/mens-category.jpg") no-repeat;
-    background-size: 100% 100%;
+    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,0.25)) no-repeat center,
+                url("../images/mens-category.jpg") no-repeat;
+    background-size: auto, 100% 100%;
     box-shadow: -0.1em -0.1em white inset;
     color:white;
     display: flex;
@@ -264,8 +266,9 @@ h4,h5,h6{
 
 .trends{
     align-items: center;
-    background:url("../images/trends-category.jpg") no-repeat;
-    background-size: 100% 100%;
+    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,0.25)) no-repeat center,
+                url("../images/trends-category.jpg") no-repeat;
+    background-size: auto, 100% 100%;
     box-shadow: -0.1em -0.1em white inset,
                  0.1em  0     white inset; 
     color:white;
@@ -279,8 +282,9 @@ h4,h5,h6{
 
 .glasses{
     align-items: center;
-    background:url("../images/glasses-category.jpg") no-repeat;
-    background-size: 100% 100%;
+    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,0.25)) no-repeat center,
+                url("../images/glasses-category.jpg") no-repeat;
+    background-size: auto, 100% 100%;
     box-shadow: 0.1em -0.1em white inset; 
     color:white;
     display: flex;
@@ -293,8 +297,9 @@ h4,h5,h6{
 
 .sale{
     align-items: center;
-    background:url("../images/sale-category.jpg") no-repeat;
-    background-size: 100% 100%;
+    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,0.25)) no-repeat center,
+                url("../images/sale-category.jpg") no-repeat;
+    background-size: auto, 100% 100%;
     box-shadow: -0.1em 0.1em white inset;
     color:white;
     display: flex;
@@ -307,8 +312,9 @@ h4,h5,h6{
 
 .bags{
     align-items: center;
-    background:url("../images/bags-category.jpg") no-repeat;
-    background-size: 100% 100%;
+    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,0.25)) no-repeat center,
+                url("../images/bags-category.jpg") no-repeat;
+    background-size: auto, 100% 100%;
     box-shadow:  0.1em 0.1em white inset,
                 -0.1em 0     white inset; 
     color:white;
@@ -322,8 +328,9 @@ h4,h5,h6{
 
 .womens{
     align-items: center;
-    background:url("../images/womens-category.jpg") no-repeat;
-    background-size: 100% 100%;
+    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,0.25)) no-repeat center,
+                url("../images/womens-category.jpg") no-repeat;
+    background-size: auto, 100% 100%;
     box-shadow: 0.1em 0.1em white inset;
     color:white;
     display: flex;
@@ -385,8 +392,9 @@ h4,h5,h6{
 
 .subscribe{
     align-items: center;
-    background: url("../images/wave-bkgd.jpg") no-repeat;
-    background-size: 100% 100%;
+    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,0.25)) no-repeat center,
+                url("../images/wave-bkgd.jpg") no-repeat;
+    background-size: auto, 100% 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -394,7 +402,7 @@ h4,h5,h6{
 
 .subscribe h1{
     color: white;
-    margin-top: 2em;
+    margin: 2em 0 0 0;
 }
 
 .subscribe p{
@@ -569,7 +577,7 @@ footer{
     
     }
     .product{
-        width: 100%;
+        width:100%;
     }
 
     .subscribe form{

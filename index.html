@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html>
 
 <head>
     <link rel="stylesheet" type="text/css" href="style/Reset.css">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/style_mobileFirst.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>
         Aloha Apparel Co
     </title>
@@ -17,19 +18,22 @@
         <img class="logo" src="images/aloha-logo.svg" />
         <ul class="navigationBar">
             <li>
-                <a href="#">about</a>
+                <a href="#about">about</a>
             </li>
             <li>
-                <a href="#">shop</a>
+                <a href="#shop">shop</a>
             </li>
             <li>
-                <a href="#">featured</a>
+                <a href="#featured">featured</a>
             </li>
             <li>
-                <a href="#">updates</a>
+                <a href="#updates">updates</a>
             </li>
         </ul>
-        <img class="cart" src="images/cart-icon.svg" />
+        <div class="cart-container">
+            <a class="clear">clear</a>
+            <span id="item-counter"></span>
+        </div>
     </header>
 
     <section class="banner">
@@ -37,97 +41,157 @@
         <h1 class="collection">Spring/Summer 2016 </h1>
     </section>
 
-    <section class="moto">
+    <section class="moto" id="about">
         <h1>
             <span>Hand-Crafted </span> Styles</h1>
         <p>
-            Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our
-            current selection of products or sign-up for updates below.
+            Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for
+            updates below.
         </p>
 
     </section>
 
-    <section class="clothesCategory">
-        <div class="mens">
+    <section class="clothesCategory" id="shop">
+        <div class="mens big">
             men's
         </div>
 
-        <div class="trends">
+        <div class="trends small">
             trends
         </div>
 
-        <div class="glasses">
+        <div class="glasses small">
             glasses
         </div>
 
-        <div class="sale">
+        <div class="sale small">
             sale
         </div>
 
-        <div class="bags">
+        <div class="bags small">
             bags
         </div>
 
-        <div class="womens">
+        <div class="womens big">
             women's
         </div>
     </section>
 
-    <section class="productDisplay">
+    <section class="productDisplay" id="featured">
         <h1>
             <span>Most-Loved</span> Products</h1>
-        <div class="display">
-            <div class="product">
+        <ul class="display bxslider">
+            <li class="product">
                 <img src="images/checked-stretch-dress.jpg" />
                 <p class="productCategory">dresses</p>
                 <h3 class="productName">Checked Stretch Dress</h3>
                 <p class="productPrice">$129.00</p>
                 <button type="submit">Add to Cart</button>
-            </div>
+            </li>
 
-            <div class="product">
+            <li class="product">
                 <img src="images/blue-hipster-backpack.jpg" />
                 <p class="productCategory">bags</p>
                 <h3 class="productName">Blue Hipster Backpack</h3>
                 <p class="productPrice">$69.00</p>
                 <button type="submit">Add to Cart</button>
-            </div>
+            </li>
 
-            <div class="product">
+            <li class="product">
                 <img src="images/demin-overall-shorts.jpg" />
                 <p class="productCategory">demin</p>
                 <h3 class="productName">Demin Overall Shorts</h3>
                 <p class="productPrice">$89.00</p>
                 <button type="submit">Add to Cart</button>
-            </div>
+            </li>
 
-            <div class="product">
+            <li class="product">
                 <img src="images/pink-dotted-dress.jpg" />
                 <p class="productCategory">dresses</p>
                 <h3 class="productName">Pink Dotted Dress</h3>
                 <p class="productPrice">$99.00</p>
                 <button type="submit">Add to Cart</button>
-            </div>
+            </li>
+
+            <li class="product">
+                <img src="images/blue-silk-dress.jpg" />
+                <p class="productCategory">dresses</p>
+                <h3 class="productName">Blue Silk Dress</h3>
+                <p class="productPrice">$149.00</p>
+                <button type="submit">Add to Cart</button>
+            </li>
+
+            <li class="product">
+                <img src="images/cotton-blue-shirt.jpg" />
+                <p class="productCategory">dresses</p>
+                <h3 class="productName">Cotton Blue Shirt</h3>
+                <p class="productPrice">$69.00</p>
+                <button type="submit">Add to Cart</button>
+            </li>
+
+            <li class="product">
+                <img src="images/cotton-yellow-tshirt.jpg" />
+                <p class="productCategory">dresses</p>
+                <h3 class="productName">Cotton Yellow Shirt</h3>
+                <p class="productPrice">$29.00</p>
+                <button type="submit">Add to Cart</button>
+            </li>
+
+            <li class="product">
+                <img src="images/stretch-knit-dress.jpg" />
+                <p class="productCategory">dresses</p>
+                <h3 class="productName">Stretch Knit Dress</h3>
+                <p class="productPrice">$129.00</p>
+                <button type="submit">Add to Cart</button>
+            </li>
 
 
-        </div>
+        </ul>
 
-        <div class="scrolling">
+        <div class="scrolling" id="bx-pager">
+            <ul>
+                <li class="desktop tablet">
+                    <a data-slide-index="0" href=""></a>
+                </li>
+                <li class="desktop tablet">
+                    <a data-slide-index="1" href=""></a>
+                </li>
+                <li class="tablet">
+                    <a data-slide-index="2" href=""></a>
+                </li>
+                <li class="tablet">
+                    <a data-slide-index="3" href=""></a>
+                </li>
+                <li>
+                    <a data-slide-index="4" href=""></a>
+                </li>
+                <li>
+                    <a data-slide-index="5" href=""></a>
+                </li>
+                <li>
+                    <a data-slide-index="6" href=""></a>
+                </li>
+                <li>
+                    <a data-slide-index="7" href=""></a>
+                </li>
+            </ul>
 
         </div>
     </section>
 
-    <section class="subscribe">
+    <section class="subscribe" id="updates">
         <h1>
             <span>Sign-up for</span>Updates</h1>
         <p>
-                Stay updated on our latest product releases, be first to find out about
-                upcoming sales, and get free style tips from out blog. Unsubscribe at any time.
+            Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from out
+            blog. Unsubscribe at any time.
         </p>
-        <form>
-            <input type="text" placeholder="Your Email" required>
+        <form id="email">
+            <input id="emailInput" type="text" placeholder="Your Email">
             <button type="submit">Subscribe</button>
         </form>
+
+        <h2 id="result"></h2>
     </section>
 
     <footer>
@@ -149,23 +213,25 @@
 
         <div class="column2">
             <p class="facebook">
-                Facebook
+                <span>Facebook</span>
             </p>
             <p class="twitter">
-                Twitter
+                <span>Twitter</span>
             </p>
             <p class="instagram">
-                Instagram
+                <span>Instagram</span>
             </p>
             <p class="pinterest">
-                Pinterest
+                <span>Pinterest</span>
             </p>
             <p class="google">
-                Google+
+                <span>Google+</span>
             </p>
         </div>
     </footer>
-
+    <script src="script/jquery-3.2.1.js"></script>
+    <script src="script/jquery.bxslider.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

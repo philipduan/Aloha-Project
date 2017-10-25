@@ -1,3 +1,7 @@
+/*
+ $ npm install --save-dev gulp-concat browser-sync gulp-uglify gulp-rename gulp-clean-css gulp-eslint
+ */
+
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
@@ -5,30 +9,57 @@ var uglify = require('gulp-uglify'),
     rename = require('gulp-rename');
 var cleanCSS = require('gulp-clean-css');
 const eslint = require('gulp-eslint');
+var sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer');
+var prettyError = require('gulp-prettyerror');
+const imagemin = require('gulp-imagemin');
+ 
+gulp.task('images', function() {
+    return gulp.src('./original_images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./images'));
+});
 
-gulp.task('JS', function () {
+
+
+gulp.task('js', function () {
     // place code for your default task here
-    return gulp.src('./src/script/*.js')
+    return gulp.src('./src/js/*.js')
         .pipe(concat('script.js'))
         .pipe(uglify()) // Call the uglify function on these files
         .pipe(rename({ extname: '.min.js' })) // Rename the uglified file
-        .pipe(gulp.dest('dist/js'));
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.reload({stream:true}));
+
+});
+
+gulp.task('css', function () {
+    // place code for your default task here
+    return gulp.src('./dest/css/*.min.css')
+        .pipe(concat('styleFinal.min.css'))
+        .pipe(gulp.dest('dest/css'));
 
 });
 
 
-gulp.task('CSS', function () {
-    return gulp.src('./src/style/*.css')
-        .pipe(concat('style.css'))
-        .pipe(cleanCSS({compatibility: '*'},))
-        .pipe(rename({extname: '.min.css'}))
-        .pipe(gulp.dest('dist/css'));
+gulp.task('sass',function(){
+    gulp.src('./src/scss/*.scss')
+    .pipe(prettyError())
+    .pipe(sass())
+    .pipe(autoprefixer({
+        browsers:['last 2 versions']
+    }))
+    .pipe(gulp.dest('./dest/css'))
+    .pipe(concat('styleFinal.css'))
+    .pipe(cleanCSS())
+    .pipe(rename({extname: '.min.css'}))
+    .pipe(gulp.dest('./dest/css'))
+    .pipe(browserSync.reload({stream: true}));
 });
-
 
 gulp.task('watch', function () {
-    gulp.watch('./src/style/*.css', ['CSS', 'reload']);
-    gulp.watch('./src/script/*.js', ['JS', 'reload']);
+    gulp.watch('./src/scss/*.scss', ['sass']);
+    gulp.watch('./src/js/*.js', ['js']);
     gulp.watch('./index.html', ['reload']);
 });
 

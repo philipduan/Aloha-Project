@@ -39,3 +39,7 @@ Thumbs.db
 # Module #
 ######################
 node_modules/
+
+# Folder #
+######################
+original_images/

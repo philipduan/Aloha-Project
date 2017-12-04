@@ -35,6 +35,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+.eslintrc
 
 # Module #
 ######################
@@ -43,3 +44,9 @@ node_modules/
 # Folder #
 ######################
 original_images/
+src/
+Aloha-Project/
+
+# File #
+######################
+gulpfile.js

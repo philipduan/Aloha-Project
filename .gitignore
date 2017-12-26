@@ -46,9 +46,10 @@ node_modules/
 original_images/
 src/
 Aloha-Project/
+dist/
+!dist/css/style.min.css
 
 # File #
 ######################
 gulpfile.js
 *.pdf
-src/css/style_mobileFirst.css

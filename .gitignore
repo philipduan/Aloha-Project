@@ -50,3 +50,5 @@ Aloha-Project/
 # File #
 ######################
 gulpfile.js
+*.pdf
+src/css/style_mobileFirst.css

@@ -1,6 +1,6 @@
 # Aloha-Project
 
-Aloha Apparel Part-1 - RED ACADEMY
+Aloha Apparel - RED ACADEMY
 
 Project Summary
 
@@ -12,4 +12,4 @@ HTML CSS (with a CSS reset styles, and media queries Mobile first approach to de
 
 What did I learn?
 
-This project is my first opportunity to exercise the HTML and CSS skills taught throughout the first week of web development training. Having comppleted the first part using flexbox for responsive design gave me a greater appreciation of the functionality. Also, I learned how relativly easy it is to use jQuery plug-ins to achieve certain results.
+This project is my first opportunity to exercise the HTML and CSS skills taught throughout the first week of web development training. Having comppleted using flexbox for responsive design gave me a greater appreciation of the functionality. Also, I learned how relativly easy it is to use jQuery plug-ins to achieve certain results.

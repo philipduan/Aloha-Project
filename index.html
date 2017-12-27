@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="dist/css/bxslider.css" />
     <link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
@@ -14,7 +15,11 @@
 
 <body>
     <header class="siteHeader">
-        <img class="logo" src="images/aloha-logo.svg" />
+        <div class="logo">
+        </div>
+        <div class ="gap">
+            
+        </div>
         <ul class="navigationBar">
             <li>
                 <a href="#about">about</a>
@@ -29,9 +34,7 @@
                 <a href="#updates">updates</a>
             </li>
         </ul>
-        <div class="cart-container">
-            <a class="clear">clear</a>
-            <span id="item-counter"></span>
+        <div class="cart">
         </div>
     </header>
 
@@ -51,27 +54,27 @@
     </section>
 
     <section class="clothesCategory" id="shop">
-        <div class="mens big">
+        <div class="mens">
             men's
         </div>
 
-        <div class="trends small">
+        <div class="trends">
             trends
         </div>
 
-        <div class="glasses small">
+        <div class="glasses">
             glasses
         </div>
 
-        <div class="sale small">
+        <div class="sale">
             sale
         </div>
 
-        <div class="bags small">
+        <div class="bags">
             bags
         </div>
 
-        <div class="womens big">
+        <div class="womens">
             women's
         </div>
     </section>
@@ -144,38 +147,7 @@
                 <button type="submit">Add to Cart</button>
             </li>
 
-
         </ul>
-
-        <div class="scrolling" id="bx-pager">
-            <ul>
-                <li class="desktop tablet">
-                    <a data-slide-index="0" href=""></a>
-                </li>
-                <li class="desktop tablet">
-                    <a data-slide-index="1" href=""></a>
-                </li>
-                <li class="tablet">
-                    <a data-slide-index="2" href=""></a>
-                </li>
-                <li class="tablet">
-                    <a data-slide-index="3" href=""></a>
-                </li>
-                <li>
-                    <a data-slide-index="4" href=""></a>
-                </li>
-                <li>
-                    <a data-slide-index="5" href=""></a>
-                </li>
-                <li>
-                    <a data-slide-index="6" href=""></a>
-                </li>
-                <li>
-                    <a data-slide-index="7" href=""></a>
-                </li>
-            </ul>
-
-        </div>
     </section>
 
     <section class="subscribe" id="updates">

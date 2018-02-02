@@ -1,15 +1,21 @@
-# Aloha-Project
+![Alt text](/Aloha.png)
+# Project 1 - Aloha Apparel
 
-Aloha Apparel - RED ACADEMY
+http://www.philipdu.com/Aloha-Project/
 
-Project Summary
+## Summary
 
-This is the first part of the first project completed as a part of RED ACADEMY's front-end web developer program. Our goal is to adequately reflect the designer's vision for the website and demonstrate effective organization of the project's root directory.
+For our first project at Red Academy we built the homepage of an e-commerce website, Aloha Apparel, using HTML5, CSS3, and jQuery. 
 
-Languages and tools used:
+## Languages and Tools Used
 
-HTML CSS (with a CSS reset styles, and media queries Mobile first approach to design & coding (Responsive Web Design) Git JQuery flexboxes
+	* HTML5
+	* CSS3 (CSS reset styles, flexbox, css grid and media queries)
+	* jQuery (smooth scrolling, bxSlider, DOM navigation)
+	* Git and Github 
+	* Mobile first approach to coding & design
+	
 
-What did I learn?
+## Learning
 
-This project is my first opportunity to exercise the HTML and CSS skills taught throughout the first week of web development training. Having comppleted using flexbox for responsive design gave me a greater appreciation of the functionality. Also, I learned how relativly easy it is to use jQuery plug-ins to achieve certain results.
+For this project I was able to learn and improve my HTML, CSS, and jQuery skills. At first using these mark-ups and languages proved to be a bit of a challenge. However,  with time and plenty of practice I was able to improve upon what I've learned, to the point where I am able to say that I am very confident in my skills with these languages. 

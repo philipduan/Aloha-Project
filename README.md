@@ -16,6 +16,10 @@ For our first project at Red Academy we built the homepage of an e-commerce webs
 	* Mobile first approach to coding & design
 	
 
-## Learning
+## Personal Learning
 
-For this project I was able to learn and improve my HTML, CSS, and jQuery skills. At first using these mark-ups and languages proved to be a bit of a challenge. However,  with time and plenty of practice I was able to improve upon what I've learned, to the point where I am able to say that I am very confident in my skills with these languages. 
+	* Understand how Flexbox and CSS grid simplified the way HTML elements are positioned on a page.
+	* Handle background image efficiently by changing the positioning, layering, and sizing propreties of elements
+	* Approach the project with Mobile First for the design 
+
+

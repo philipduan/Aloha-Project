@@ -44,7 +44,6 @@ node_modules/
 # Folder #
 ######################
 original_images/
-src/
 Aloha-Project/
 dist/
 !dist/css/style.min.css
